@@ -4,7 +4,7 @@ body {
     background-color: antiquewhite;
 }
 
-.header {
+#header {
     padding: 20px;
     background-color: rgb(14, 29, 29);
     color: white;
@@ -33,7 +33,7 @@ body {
     font-size: 20px;
     color: rgb(61, 175, 175);
 }
-
+/* This allowed my portrait to be centered at any size */
 .portrait {
     display: flex;
     margin: auto;
@@ -46,7 +46,8 @@ body {
     margin-left: 50px;
     left: 20px;
 }
-.about-side {
+/* Below is my attempt at a sidebar */
+#about-side {
     display: flex;
     padding: 0px 30px 10px 0px;
     border-right-color: rgb(0, 110, 255);
@@ -55,7 +56,7 @@ body {
     border-bottom-color: antiquewhite;
     border-style: solid;
 }
-
+/* This created two flexible paragraphs that scale based on screen size for my about me */
 .about-paragraph {
     display: flex;
     flex-direction: row;
@@ -72,8 +73,8 @@ body {
     left: 20px;
     padding: 10px;
 }
-
-.my-work {
+/* Below is another attempt at a sidebar */
+#my-work {
     margin: 20px;
     left: 30px;
     display: flex;
@@ -90,8 +91,8 @@ body {
     flex-wrap: wrap;
     padding: 20px;
 }
-
-.one {
+/* I wanted to create a larger display for my feature project, which is also my only project at this point */
+#one {
     padding: 20px;
     flex: 2 1 900px;
     text-align: center;
@@ -102,17 +103,17 @@ body {
     border-color: black;
     justify-content: center;
   }
-
+/* I use hero to designate the image I place as a representation for each of my projects */
 .hero {
     max-width: 350px;
     max-height: 350px;
 }
-
+/* This allows the .hero class to glow when it is hovered over */
 .hero:hover {
     color: rgb(255, 255, 255);
     box-shadow: 0 10px 35px rgb(145, 92, 182);
 }
-
+/* This was part of my research that initially, and can be seen in some versions of sizing of the image, places text at the bottom of each of the .hero images */
 .txtover { 
     position:relative 
 } 
@@ -120,7 +121,7 @@ body {
 .txtover figcaption { 
     position:absolute; bottom:0; left:75px;
 }
-
+/* This is for each of my lesser projects, which right now are empty */
 .two {
     flex: 1 2 300px;
     text-align: center;
@@ -132,19 +133,7 @@ body {
     justify-content: space-evenly;
   }
 
-.three {
-    flex: 1 1 auto;
-  }
-
-.four {
-    flex: 1 1 auto;
-}
-
-.five {
-    flex: 1 1 auto;
-}
-
-.footer {
+#footer {
     padding: 10px;
     background-color: rgb(14, 29, 29);
     color: white;
@@ -174,7 +163,7 @@ body {
     font-size: 20px;
     color: rgb(61, 175, 175);
 }
-
+/* This was an attempt at making the website more mobile friendly, this will require more research */
 @media screen and (max-width: 768px) {
     main,
     nav,
