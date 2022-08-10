@@ -1,0 +1,196 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: antiquewhite;
+}
+
+.header {
+    padding: 20px;
+    background-color: rgb(14, 29, 29);
+    color: white;
+    min-height: 100px;
+}
+
+.name {
+    border: 1rem;
+    border-style: solid;
+    border-color: dimgray;
+    background-color: dimgray;
+    position: absolute;
+    left: 0px;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    padding: 20px;
+}
+
+.nav a {
+    text-align: center;
+    padding: 10px 15px;
+    font-size: 20px;
+    color: rgb(61, 175, 175);
+}
+
+.portrait {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+#about {
+    display: flex;
+    position: relative;
+    margin-left: 50px;
+    left: 20px;
+}
+.about-side {
+    display: flex;
+    padding: 0px 30px 10px 0px;
+    border-right-color: rgb(0, 110, 255);
+    border-top-color: antiquewhite;
+    border-left-color: antiquewhite;
+    border-bottom-color: antiquewhite;
+    border-style: solid;
+}
+
+.about-paragraph {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+#work {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    margin-left: 20px;
+    left: 20px;
+    padding: 10px;
+}
+
+.my-work {
+    margin: 20px;
+    left: 30px;
+    display: flex;
+    border-right-color: rgb(0, 110, 255);
+    border-top-color: antiquewhite;
+    border-left-color: antiquewhite;
+    border-bottom-color: antiquewhite;
+    border-style: solid;
+}
+
+.projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.one {
+    padding: 20px;
+    flex: 2 1 900px;
+    text-align: center;
+    display: flex;
+    border-width: 4px;
+    border-radius: 5px;
+    border-style: ridge;
+    border-color: black;
+    justify-content: center;
+  }
+
+.hero {
+    max-width: 350px;
+    max-height: 350px;
+}
+
+.hero:hover {
+    color: rgb(255, 255, 255);
+    box-shadow: 0 10px 35px rgb(145, 92, 182);
+}
+
+.txtover { 
+    position:relative 
+} 
+
+.txtover figcaption { 
+    position:absolute; bottom:0; left:75px;
+}
+
+.two {
+    flex: 1 2 300px;
+    text-align: center;
+    display: flex;
+    border-width: 4px;
+    border-radius: 5px;
+    border-style: ridge;
+    border-color: black;
+    justify-content: space-evenly;
+  }
+
+.three {
+    flex: 1 1 auto;
+  }
+
+.four {
+    flex: 1 1 auto;
+}
+
+.five {
+    flex: 1 1 auto;
+}
+
+.footer {
+    padding: 10px;
+    background-color: rgb(14, 29, 29);
+    color: white;
+    min-height: 50px;
+}
+
+#contact-me {
+    position: absolute;
+    border: 1rem;
+    border-style: solid;
+    border-color: dimgray;
+    background-color: dimgray;
+    position: absolute;
+    left: 0px;
+}
+
+.nav-contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.nav-contact a {
+    text-align: center;
+    padding: 10px 15px;
+    font-size: 20px;
+    color: rgb(61, 175, 175);
+}
+
+@media screen and (max-width: 768px) {
+    main,
+    nav,
+    header,
+    article,
+    .box {
+      flex-direction: column;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    main,
+    nav,
+    header,
+    article,
+    .box {
+      flex-direction: column;
+    }
+  }
