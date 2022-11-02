@@ -1,98 +1,43 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    background-color: antiquewhite;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: auto;
+    height: auto;
+    flex-grow: 1;
 }
 
-#header {
-    padding: 20px;
-    background-color: rgb(14, 29, 29);
-    color: white;
-    min-height: 100px;
+html, main {
+    background-color: rgb(20, 20, 20);
+    color: azure;
 }
 
-.name {
-    border: 1rem;
-    border-style: solid;
-    border-color: dimgray;
-    background-color: dimgray;
-    position: absolute;
-    left: 0px;
+header {
+    position: relative;
+    flex-grow: 1;
+    width: 100%;
 }
 
-.nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: right;
-    padding: 20px;
-}
-
-.nav a {
-    text-align: center;
-    padding: 10px 15px;
-    font-size: 20px;
-    color: rgb(61, 175, 175);
-}
 /* This allowed my portrait to be centered at any size */
 .portrait {
     display: flex;
     margin: auto;
     justify-content: center;
+    background-image: url(assets/tamu\ overview.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-#about {
-    display: flex;
-    position: relative;
-    margin-left: 50px;
-    left: 20px;
-}
 /* Below is my attempt at a sidebar */
-#about-side {
-    display: flex;
-    padding: 0px 30px 10px 0px;
-    border-right-color: rgb(0, 110, 255);
-    border-top-color: antiquewhite;
-    border-left-color: antiquewhite;
-    border-bottom-color: antiquewhite;
-    border-style: solid;
+#about {
+    padding: 20px;
+    background-color: rgb(20, 20, 20);
+    color: azure;
 }
 /* This created two flexible paragraphs that scale based on screen size for my about me */
-.about-paragraph {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 20px;
-}
 
-#work {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    position: relative;
-    margin-left: 20px;
-    left: 20px;
-    padding: 10px;
-}
-/* Below is another attempt at a sidebar */
-#my-work {
-    margin: 20px;
-    left: 30px;
-    display: flex;
-    border-right-color: rgb(0, 110, 255);
-    border-top-color: antiquewhite;
-    border-left-color: antiquewhite;
-    border-bottom-color: antiquewhite;
-    border-style: solid;
-}
-
-.projects {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 20px;
-}
 /* I wanted to create a larger display for my feature project, which is also my only project at this point */
-#one {
+/* #one {
     padding: 20px;
     flex: 2 1 900px;
     text-align: center;
@@ -102,11 +47,11 @@ body {
     border-style: ridge;
     border-color: black;
     justify-content: center;
-  }
+  } */
 /* I use hero to designate the image I place as a representation for each of my projects */
 .hero {
     max-width: 350px;
-    max-height: 350px;
+    max-height: 240px;
 }
 /* This allows the .hero class to glow when it is hovered over */
 .hero:hover {
@@ -122,7 +67,7 @@ body {
     position:absolute; bottom:0; left:75px;
 }
 /* This is for each of my lesser projects, which right now are empty */
-.two {
+/* .two {
     flex: 1 2 300px;
     text-align: center;
     display: flex;
@@ -131,13 +76,13 @@ body {
     border-style: ridge;
     border-color: black;
     justify-content: space-evenly;
-  }
+} */
 
 #footer {
-    padding: 10px;
+    /* padding: 10px; */
     background-color: rgb(14, 29, 29);
     color: white;
-    min-height: 50px;
+    /* min-height: 50px; */
 }
 
 #contact-me {
@@ -164,7 +109,7 @@ body {
     color: rgb(61, 175, 175);
 }
 /* This was an attempt at making the website more mobile friendly, this will require more research */
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
     main,
     nav,
     header,
@@ -182,4 +127,4 @@ body {
     .box {
       flex-direction: column;
     }
-  }
+  } */

@@ -4,94 +4,115 @@
 <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
     <title>Aidan Krbec's Portfolio</title>
 </head>
 
-<body>
-    <header id="header">
-        <h1 class="name">Aidan Krbec</h1>
-        <!-- Below are links for redirecting clicks. -->
-        <nav class="nav">
-            <a href="#about">About Me</a>
-            <a href="#work">My Work</a>
-            <a href="#contact-me">Contact Me</a>
+<header class="d-flex">
+    <div class="col-15 col-md-10 mb-3 p-3 rounded">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="#">Aidan Krbec</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#blue-nav"
+                aria-controls="blue-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="blue-nav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Me <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#work">My Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact-me">Contact Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/krbex" target="_blank"
+                            rel="noopener noreferrer"><img src="./assets/GitHub-Mark-32px.png"></a>
+                    </li>
+                </ul>
             </div>
-    </header>
+        </nav>
+    </div>
+</header>
 
-    <container class="portrait">
-        <img src="https://media-exp1.licdn.com/dms/image/C5603AQH8gIJO_sKC-w/profile-displayphoto-shrink_800_800/0/1548528499157?e=1665619200&v=beta&t=aDFikJSofr8AZBdhQDmrP4As5PyCDr3yzZkpDXMo8b0"
-            alt="Aidan Krbec standing in front of the sunset in a suit">
+<body>
+
+    <container class="portrait ">
+        <img src="./assets/1548528499157.jpg" alt="A picture of Aidan Krbec">
     </container>
 
-    <div id="about">
-        <h2 id="about-side">About Me</h2>
+    <div class="row" id="about">
+        <h2 id="about-side col-2 p-3">About Me</h2>
         <!-- Below is information outlining my about me -->
-        <p class="about-paragraph">
-            Aidan is a graduate from Texas A&M University where he earned his bachelors degree as well as a certificate
-            of leadership for completing four years in the Corps of Cadets. Pursuing an interest that could be turned
-            into a career and a passion, he enrolled in a coding bootcamp, becoming proficient in HTML, CSS, more to
-            come.
-        </p>
-        <p class="about-paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.
+        <p class="about-paragraph col-11 p-3">
+            Full stack web developer leveraging an education at Texas A&M University, a leadership
+            certificate from the Corps of Cadets, and a background in sales and business development
+            for a well rounded skill set. Self-starter with skills in HTML, CSS, and JavaScript
+            as well as a love for learning and working in fast-paced team settings. Continued to
+            meet and exceed goals, leading the division in sales during the 2021 calendar year and
+            continuing education in the University of Texas Coding Bootcamp. Excited to develop
+            software and web applications with brand intention and user friendliness as guiding lights.
         </p>
     </div>
 
     <main>
         <!-- This section contains my projects, more will come and additional content may be added later -->
-        <section id="work">
-            <h2 id="my-work">My Work</h2>
-            <div id="one">
+        <div class="work d-flex flex-row">
+            <h2 class="my-work col-2 p-2">My Work</h2>
+            <div id="col-2 mr-2 p-2">
                 <figure class="txtover">
                     <a href="https://krbex.github.io/Horiseon-SEO/" target="_blank" rel="noopener noreferrer"><img
-                            class="hero" src="./digital-marketing-meeting.jpg"></a>
+                            class="hero" src="./assets/digital-marketing-meeting.jpg"></a>
                     <figcaption>Horiseon SEO Services</figcaption>
                 </figure>
             </div>
-            <div class="two">
+            <div class="col-2 mr-2 p-2">
                 <figure class="txtover">
-                    <a href="https://krbex.github.io/Project-1-Runtime-Terror/" target="_blank" rel="noopener noreferrer">
-                        <img class="hero" src="./BookClub.jpg"></a>
+                    <a href="https://krbex.github.io/Project-1-Runtime-Terror/" target="_blank"
+                        rel="noopener noreferrer">
+                        <img class="hero" src="./assets/BookClub.jpg"></a>
                     <figcaption>The Book Club</figcaption>
                 </figure>
             </div>
-            <div class="two">
+            <div class="col-2 mr-2 p-2">
                 <figure class="txtover">
                     <a href="#">
-                        <img class="hero" src="https://www.web2ink.com/wp-content/uploads/2020/03/coming-soon-advantage-plan..jpg"></a>
-                    <figcaption>COMING SOON</figcaption>
+                        <img class="hero"
+                            src="https://www.web2ink.com/wp-content/uploads/2020/03/coming-soon-advantage-plan..jpg"></a>
+                    <figcaption></figcaption>
                 </figure>
             </div>
-            <div class="two">
+            <div class="col-2 mr-2 p-2">
                 <figure class="txtover">
                     <a href="#">
-                        <img class="hero" src="https://www.web2ink.com/wp-content/uploads/2020/03/coming-soon-advantage-plan..jpg"></a>
-                    <figcaption>COMING SOON</figcaption>
+                        <img class="hero"
+                            src="https://www.web2ink.com/wp-content/uploads/2020/03/coming-soon-advantage-plan..jpg"></a>
+                    <figcaption></figcaption>
                 </figure>
             </div>
-            <div class="two">
+            <div class="col-2 mr-2 p-2">
                 <figure class="txtover">
                     <a href="#">
-                        <img class="hero" src="https://www.web2ink.com/wp-content/uploads/2020/03/coming-soon-advantage-plan..jpg"></a>
-                    <figcaption>COMING SOON</figcaption>
+                        <img class="hero"
+                            src="https://www.web2ink.com/wp-content/uploads/2020/03/coming-soon-advantage-plan..jpg"></a>
+                    <figcaption></figcaption>
                 </figure>
             </div>
-        </section>
+        </div>
     </main>
-<!-- Within the footer I included a few pieces of automation that are useful to me as a sales professional that likely will make it easier for any hiring manager to contact me, including an auto-dialer and auto-emailer -->
-    <footer id="footer">
-        <h2 id="contact-me">Contact Me</h2>
-        <nav class="nav-contact">
-            <a href="tel:2103637532">210-363-7532</a>
-            <a href="mailto:aidan.krbec5@gmail.com">aidan.krbec5@gmail.com</a>
-            <a href="https://www.linkedin.com/in/aidan-krbec-a86700128/" target="_blank"
-                rel="noopener noreferrer">LinkedIn</a>
-        </nav>
-    </footer>
+    <!-- Within the footer I included a few pieces of automation that are useful to me as a sales professional that likely will make it easier for any hiring manager to contact me, including an auto-dialer and auto-emailer -->
 </body>
+<footer id="footer">
+    <h2 id="contact-me">Contact Me</h2>
+    <nav class="nav-contact">
+        <a href="tel:2103637532">210-363-7532</a>
+        <a href="mailto:aidan.krbec5@gmail.com">aidan.krbec5@gmail.com</a>
+        <a href="https://www.linkedin.com/in/aidan-krbec-a86700128/" target="_blank"
+            rel="noopener noreferrer">LinkedIn</a>
+    </nav>
+</footer>
+
 
 </html>
