@@ -18,7 +18,6 @@ header {
     width: 100%;
 }
 
-/* This allowed my portrait to be centered at any size */
 .portrait {
     display: flex;
     margin: auto;
@@ -28,37 +27,23 @@ header {
     background-size: cover;
 }
 
-/* Below is my attempt at a sidebar */
 #about {
     padding: 20px;
     background-color: rgb(20, 20, 20);
     color: azure;
 }
-/* This created two flexible paragraphs that scale based on screen size for my about me */
 
-/* I wanted to create a larger display for my feature project, which is also my only project at this point */
-/* #one {
-    padding: 20px;
-    flex: 2 1 900px;
-    text-align: center;
-    display: flex;
-    border-width: 4px;
-    border-radius: 5px;
-    border-style: ridge;
-    border-color: black;
-    justify-content: center;
-  } */
-/* I use hero to designate the image I place as a representation for each of my projects */
+/* Class used for thumbnail of projects */
 .hero {
     max-width: 350px;
     max-height: 240px;
 }
-/* This allows the .hero class to glow when it is hovered over */
 .hero:hover {
     color: rgb(255, 255, 255);
     box-shadow: 0 10px 35px rgb(145, 92, 182);
 }
-/* This was part of my research that initially, and can be seen in some versions of sizing of the image, places text at the bottom of each of the .hero images */
+
+/* Caption for thumbnails */
 .txtover { 
     position:relative 
 } 
@@ -66,23 +51,10 @@ header {
 .txtover figcaption { 
     position:absolute; bottom:0; left:75px;
 }
-/* This is for each of my lesser projects, which right now are empty */
-/* .two {
-    flex: 1 2 300px;
-    text-align: center;
-    display: flex;
-    border-width: 4px;
-    border-radius: 5px;
-    border-style: ridge;
-    border-color: black;
-    justify-content: space-evenly;
-} */
 
 #footer {
-    /* padding: 10px; */
     background-color: rgb(14, 29, 29);
     color: white;
-    /* min-height: 50px; */
 }
 
 #contact-me {
@@ -108,13 +80,13 @@ header {
     font-size: 20px;
     color: rgb(61, 175, 175);
 }
-/* This was an attempt at making the website more mobile friendly, this will require more research */
-/* @media screen and (max-width: 768px) {
+
+@media screen and (max-width: 768px) {
     main,
     nav,
     header,
-    article,
-    .box {
+    #about,
+    .work {
       flex-direction: column;
     }
   }
@@ -123,8 +95,8 @@ header {
     main,
     nav,
     header,
-    article,
-    .box {
+    #about,
+    .work {
       flex-direction: column;
     }
-  } */
+  }
